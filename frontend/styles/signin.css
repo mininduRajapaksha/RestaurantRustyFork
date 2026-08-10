@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../Images/background2.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container h1{
+    color: #ffff;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+.container h2{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.loginform{
+   width: 400px;
+   margin: 50px auto;
+   padding: 20px;
+   background:#ffff;
+   opacity: 90%;
+   border:1px solid rgba(255,255,255,0.25);
+   border-radius:14px;
+   padding:44px 48px 38px;
+   text-align:left;
+   box-shadow:0 20px 50px -12px rgba(0,0,0,0.5);
+}
+.loginform h3{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.input-group{
+    margin-bottom: 1.5rem;
+}
+.form-label{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.input-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-wrap i{
+    position: absolute;
+    left: 15px;
+    font-size: 15px;
+}
+.form-input{
+    width: 100%;
+    padding:10px 20px 10px 48px;
+    border-radius:999px;
+    border:1.5px solid #000000;
+    font-size:15px;
+    outline:none;
+    transition:border-color 0.2s;
+}
+.form-input::placeholder{
+  color:#6f6a5f;
+}
+.form-input:focus{
+    border-color: #C9A227;
+}
+.forgotpwd{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #000000;
+    margin: 10px 0;
+    font-size: 13px;
+}
+.signin-button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #C9A227;
+    border: none;
+    border-radius: 999px;
+    color:#1a1408;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.signin-button:hover{
+    background-color: #ffff;
+    color: #C9A227;
+    transform:translateY(-1px);
+    border:1px solid #C9A227;
+}
+.auth-switch{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.auth-switch a{
+    text-decoration: none;
+}

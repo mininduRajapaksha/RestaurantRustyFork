@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back!</h1>
+        <h2>Experiance The Rusty Fork Again</h2>
+
+        <form class="loginform">
+            <h3>Sign In</h3>
+
+            <div class="input-group">
+                <label for="userName" class="form-label">User Name</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="email" class="form-input" placeholder="Enter your user name">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" class="form-input" placeholder="Enter password">
+                </div>
+            </div>
+
+            <a class="forgotpwd" href="#">Forgot Password?</a>
+
+            <button id="signin" class="signin-button">SIGN IN</button>
+
+            <p class="auth-switch">Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>

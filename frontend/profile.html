@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Rusty Fork | Contact</title>
+    <link rel="stylesheet" href="./styles/profile.css">
+    <title>Rusty Fork | My Profile</title>
 </head>
 <body>
-        <header>
+    <header>
         <nav>
             <img src="./Images/Logo.png" alt="Logo">
 
@@ -17,65 +17,53 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="nav-icons">
-                <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                <a href="profile.html" class="active"><i class="fa-solid fa-user"></i></a>
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
     </header>
 
     <section class="container">
-        <h1 class="title">Contact Us</h1>
+        <h1 class="title">Profile</h1>
 
-        <div class="content">
-            <div class="left">
-                <div class="item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="info">
-                        <h3>Visit Us</h3>
-                        <p>No 10, Galle Road, Colombo 10, Sri Lanka</p>
-                    </div>
+        <div class="profile-card">
+
+            <div class="profile-pic">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+
+            <h2 class="profile-name">Profile Name</h2>
+            <p class="profile-email">Email</p>
+
+            <div class="profile-details">
+                <div class="detail-item">
+                    <label>Full Name</label>
+                    <input type="text" value="Full Name" disabled>
                 </div>
-                <div class="item">
-                    <i class="fa-sharp fa-solid fa-phone"></i>
-                    <div class="info">
-                        <h3>Contact</h3>
-                        <p>+94 112256333</p>
-                    </div>
+                <div class="detail-item">
+                    <label>Email</label>
+                    <input type="email" value="Email" disabled>
                 </div>
-                <div class="item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="info">
-                        <h3>Email</h3>
-                        <p>rustyfork@aps.com</p>
-                    </div>
+                <div class="detail-item">
+                    <label>Phone Number</label>
+                    <input type="text" value="phone No" disabled>
                 </div>
             </div>
 
-            <div class="right">
-                <h3>Send us a message</h3>
-                <form>
-                    <div class="input-field">
-                        <label for="name">Full Name</label>
-                        <input type="text" placeholder="Enter your full name">
-                    </div>
-                    <div class="input-field">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Enter email">
-                    </div>
-                    <div class="input-field">
-                        <label for="message">Message</label>
-                        <textarea name="message" placeholder="Enter your message"></textarea>
-                    </div>
-
-                    <button>SUBMIT</button>
-                </form>
+            <div class="profile-actions">
+                <button class="edit-btn" id="editBtn">Edit Profile</button>
+                <button class="logout-btn" id="logoutBtn">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </button>
             </div>
+
         </div>
     </section>
+
     <!--footer-->
     <footer>
         <div class="footer-container">
@@ -86,18 +74,18 @@
             <div class="footer-category">
                 <h2>EXPLORE</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contacts">
                 <h2>CONTACT US</h2>
                 <div class="footer-contact location">
                     <a class="footer-icon"><i class="fa-solid fa-location-dot"></i></a>
-                    <h3>115, Payton Street, Colombo 1</h2>
+                    <h3>115, Payton Street, Colombo 1</h3>
                 </div>
                 <div class="footer-contact telNo">
                     <a class="footer-icon"><i class="fa-sharp fa-solid fa-phone"></i></a>
@@ -132,5 +120,7 @@
         </div>
         <p>&copy; 2024 Rusty Fork. All rights reserved.</p>
     </footer>
+
+    <script src="./javaScript/profile.js"></script>
 </body>
 </html>

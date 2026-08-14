@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+    <title>Rusty Fork | Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Join Our Rusty Fork Family</h1>
+        <h3>create your account and enjoy exclusive offers, 
+            <br>reservations and online ordering
+        </h3>
+
+        <form class="signup-form" id="signupForm">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label for="fullName" class="input-label">Full Name</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="form-input" id="fullName" placeholder="Enter user name">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email" class="input-label">Email</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="form-input" id="email" placeholder="example@gmail.com">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="phone" class="input-label">Phone Number</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="phone" class="form-input" id="phone" placeholder="Enter your mobile number">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password" class="input-label">Password</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="form-input" id="password" placeholder="Minimum 6 characters">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="confirm password" class="input-label">Confirm Passwordr</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="form-input" id="confirmpwd" placeholder=" Re-enter your Password">
+                </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox">I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <button type="submit" class="signUp-btn" id="signUp">SIGN UP</button>
+            
+            <p class="auth-switch">Already have an account? <a href="signin.html">Sign In</a></p>
+        </form>
+    </div>
+    <script src="./javaScript/signup.js"></script>
+</body>
+</html>

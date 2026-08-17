@@ -19,8 +19,6 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 
 // Check login status
-// "currentUser" is the single source of truth for whether someone is logged in —
-// signin.js already sets this on successful login, so we just check it exists.
 const storedCurrentUser = localStorage.getItem("currentUser");
 
 if (!storedCurrentUser) {
